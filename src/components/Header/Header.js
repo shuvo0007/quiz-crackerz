@@ -16,7 +16,7 @@ const Header = ({ fixed }) => {
               <img className="w-10 rounded-full mx-5" src={logo} alt="logo" />
               <a
                 className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-                href="#pablo"
+                href="/"
               >
                 Quiz Treasure
               </a>

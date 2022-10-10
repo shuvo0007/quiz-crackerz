@@ -1,9 +1,10 @@
 import React from "react";
-import logo from "../image/title.gif";
+import title from "../image/title.png";
 import menu from "../image/menu.svg";
 import home from "../image/home.svg";
 import stats from "../image/stats.svg";
 import blog from "../image/blog.svg";
+import { Link } from "react-router-dom";
 
 const Header = ({ fixed }) => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -13,7 +14,7 @@ const Header = ({ fixed }) => {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <div className="flex">
-              <img className="w-10 rounded-full mx-5" src={logo} alt="logo" />
+              <img className="w-10 rounded-full mx-5" src={title} alt="logo" />
               <a
                 className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
                 href="/"
@@ -38,31 +39,31 @@ const Header = ({ fixed }) => {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto ">
               <li className="nav-item">
-                <a
+                <Link
+                  to="/home"
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
                 >
                   <img className="w-6" src={home} alt="home" />
                   <span className="ml-2">Home</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
+                  to="/statistics"
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
                 >
                   <img className="w-6" src={stats} alt="statistics" />
                   <span className="ml-2">Statistics</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
+                  to="/blog"
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
                 >
                   <img className="w-6" src={blog} alt="blog" />
                   <span className="ml-2">Blog</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

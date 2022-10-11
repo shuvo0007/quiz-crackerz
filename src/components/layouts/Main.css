@@ -1,0 +1,17 @@
+.home-container {
+  /* background-image: url(../image/bg1.jpg); */
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.2), 
+    rgba(0, 0, 0, 0.2)
+  ),
+
+  url(../image/bg1.jpg);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}

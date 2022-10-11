@@ -2,13 +2,12 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 import Course from "../Course/Course";
 import TopBanner from "./TopBanner";
-import './Home.css';
 
 const Home = () => {
   const allCourses = useLoaderData();
   const courses = allCourses.data;
   return (
-    <div className="home-container">
+    <div className="">
       <TopBanner></TopBanner>
 
       <div className="grid grid-cols-3 gap-20 mx-80">

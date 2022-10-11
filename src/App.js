@@ -4,7 +4,7 @@ import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
 import Main from "./components/layouts/Main";
 import NotFound from "./components/NotFound/NotFound";
-import Question from "./components/Question/Question";
+import Question from "./components/Questions/Questions";
 import Statistics from "./components/Statistics/Statistics";
 
 function App() {

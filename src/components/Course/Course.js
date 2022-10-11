@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Question from "../Question/Question";
 
 const Course = ({ course }) => {
   const { id, name, logo, total } = course;

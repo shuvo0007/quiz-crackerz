@@ -1,6 +1,6 @@
 Website Name: QUIZ TREASURE
 
-Website link: https://quiz-treasure.netlify.app/
+Website link: https://quiz-treasure.netlify.app
 
 Feature:
 

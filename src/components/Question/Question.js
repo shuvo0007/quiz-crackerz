@@ -53,14 +53,14 @@ const Question = ({ questionDiv }) => {
         <h2 className="text-4xl m-5 ">
           {question.replace(/(<([^>]+)>)|&nbsp;/gi, " ")}
         </h2>
-        <div className="flex flex-wrap justify-between drop-shadow-lg ">
+        <div className="md:flex md:flex-wrap justify-between drop-shadow-lg ">
           {options.map((option) => (
             <div>
               <button
                 onClick={() =>
                   option === correctAnswer ? notifyTrue() : notifyFalse()
                 }
-                className="shadow-lg shadow-blue-500/50 border-2 border-sky-700 w-64 p-2 rounded-xl m-5 text-2xl bg-blue-900/50 hover:bg-blue-700"
+                className="shadow-lg shadow-blue-500/50 border-2 border-sky-700 w-96 md:w-64 p-2 rounded-xl m-5 text-2xl bg-blue-900/50 hover:bg-blue-700"
               >
                 {option}
               </button>

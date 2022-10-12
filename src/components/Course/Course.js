@@ -5,7 +5,7 @@ const Course = ({ course }) => {
   const { id, name, logo, total } = course;
 
   return (
-    <div className="bg-slate-900 hover:bg-blue-900 bg-transparent rounded-lg border-2 border-blue-400 flex flex-col p-10 text-white gap-3 shadow-lg shadow-blue-500/50">
+    <div className="bg-slate-900 hover:bg-blue-900 bg-transparent rounded-lg border-2 border-blue-400 flex flex-col p-10 text-white gap-3 shadow-lg shadow-blue-500/50 mb-10 md:mb-0 md:mx-0 ">
       <img className="" src={logo} alt="" />
       <h2 className="text-3xl font-bolder text-center">{name}</h2>
       <p className="text-xl text-center">Total Question: {total}</p>
